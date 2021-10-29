@@ -17,7 +17,7 @@ const Services = () => {
     } , [])
     console.log(services)
     return (
-        <div className="container">
+        <div className="container pt-5">
             <h1 className="text-center heading-text fs-1">Amazing places to visit</h1>
             <h5>Bangladesh has incredible places for you all around the country. Our fantastic destinations are ready for your visit.</h5>
             <Row xs={1} md={3} className="g-5 m-4">

@@ -1,8 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Booking from './components/Home/Booking/Booking';
 import Home from './components/Home/Home';
 import Login from './components/login/Login/Login';
+import PrivateRoute from './components/login/PrivateRoute/PrivateRoute';
 import NotFound from './components/NotFound/NotFound';
 import Register from './components/Register/Register';
 import Header from './components/Shared/Header/Header'
@@ -21,6 +23,9 @@ function App() {
           <Route path="/home">
               <Home></Home>
           </Route>
+          <PrivateRoute path="/booking/:_id">
+              <Booking/>
+          </PrivateRoute>
           <Route path="/login">
               <Login/>
           </Route>

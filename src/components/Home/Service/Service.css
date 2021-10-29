@@ -1,9 +1,15 @@
-.service:hover{
+
+.service-img{
+    /* height: 530px !important; */
+    overflow: hidden !important;
+    
+};
+.service:hover .service-img{
     transform: scale(1.1);
-    transition: transform 3s;
+    transition: transform 1s;
+    
 }
 .service{
-    overflow: hidden;
     border: none !important;
 }
 .service-col{
@@ -11,18 +17,15 @@
     height: 415px;
 }
 
-.learn-more-btn{
-    background-image: linear-gradient(to right,#e2231a,#e2231a);
-    background-position: 0 1.15em;
-    background-repeat: repeat-x;
-    background-size: 2px 2px;
-    font-weight: 600;
-    color: #1a1a1a;
+
+
+.booking-btn{
+    color: #e2231a;
     text-decoration: none;
 }
 
-.learn-more-btn:hover{
-    color: #e2231a;
+.booking-btn:hover{
+    color: black;
 }
 
 

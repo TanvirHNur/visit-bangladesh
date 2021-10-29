@@ -37,6 +37,7 @@ const Header = () => {
         <Link className="my-nav-link" to="/login">Login</Link> */}
       { user?.email ? 
         <div>
+          <Link className="my-nav-link me-2" to="/allBooking">All Booking</Link>
           <Link className="my-nav-link me-2" to="/myBooking">My Booking</Link>
         <Link className="my-nav-link me-2" to="/">{user?.displayName}</Link>
         <Link onClick={logOut} className="my-nav-link" to="/home">

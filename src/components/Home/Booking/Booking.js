@@ -26,7 +26,7 @@ const Booking = () => {
         // data.order=savedCart;
         data.status= 'pending';
         data.id = _id;
-        data.name = name;
+        data.item = name;
         data.img = img;
         console.log(data)
         fetch('http://localhost:5000/myBookings', {

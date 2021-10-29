@@ -1,0 +1,8 @@
+const ser = [
+    {name:'Nilachal', price: 10000, des:'The two most popular tourist destinations in Bandarban are Nilachal and Nilgiri. It is located on the top of a secluded hill, these two places attract tourists all year round.', img: 'https://i.ibb.co/6W79DN2/800px-Nilachol-Bandarban-Bangladesh-14.jpg' },
+    {name:'St. Martin Island', price: 10000, des:'St. Martin Island like a pearl dot in the Bay of Bengal. It is situated at the entrance of Bangladesh-Myanmar border river Naaf.', img: 'https://i.ibb.co/c6FbdDd/1523127044-3.jpg' },
+    {name:'Jaflong', price: 10000, des:'Jaflong is blessed with the rare beauty of rolling stones from hills. River Mari is flowing within Jaflong from the Himalayas Mountain along the hill Khashia which is the main transporter route of the stones.', img: 'https://i.ibb.co/1GsZyYT/jaflong.jpg' },
+    {name:'Cox Bazar', price: 10000, des:'Cox Bazar is consists of miles of golden sands, towering cliffs, surfing waves, rare conch shells, colourful pagodas, Buddhist temples and tribes. The most attractive tourist Resort full of bounties of nature in Bangladesh.', img: 'https://i.ibb.co/0Y3WdXW/photo-35763306.jpg' },
+    {name:'Kuakata', price: 10000, des:'Kuakata is known for its picturesque landscape beauty of panoramic beach, clear blue sky, the tides of the bay bashing on the shore and its mangrove forest.', img: 'https://i.ibb.co/31JPnSL/sk.jpg' },
+    {name:'Sundarbans', price: 10000, des:'Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal', img: 'https://i.ibb.co/YpTyYcS/305e7835e9b56d9c237bd152e8e44ceb.jpg' }
+]

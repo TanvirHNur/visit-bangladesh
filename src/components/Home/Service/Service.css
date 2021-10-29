@@ -1,0 +1,34 @@
+.service:hover{
+    transform: scale(1.1);
+    transition: transform 3s;
+}
+.service{
+    overflow: hidden;
+    border: none !important;
+}
+.service-col{
+    background-color: #F6F6F6;
+    height: 415px;
+}
+
+.learn-more-btn{
+    background-image: linear-gradient(to right,#e2231a,#e2231a);
+    background-position: 0 1.15em;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.learn-more-btn:hover{
+    color: #e2231a;
+}
+
+
+@media only screen and (max-width:688px){
+    .service-col{
+        background-color: #F6F6F6;
+        height: auto;
+    }
+}

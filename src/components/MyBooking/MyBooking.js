@@ -52,7 +52,7 @@ const MyBooking = () => {
                     myBookings.map(booking => {
                         return (
                             <div className="d-flex MyBookingDetail" key={booking._id}>
-            <img className="booked-img" src={booking.img} alt="" />
+            <img className="booked-img img-fluid" src={booking.img} alt="" />
             <div className="ms-3">
             <h3>{booking.item} </h3>
             <button className="btn cencel-btn" onClick={ () =>  handleDelete(booking._id) }>Cencel</button>

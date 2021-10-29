@@ -1,0 +1,26 @@
+.my-nav-bg{
+    background-color: #1B3163;
+}
+
+.my-nav-link{
+    color: #F3F3F3 !important;
+    font-size: 1.1rem;
+    line-height: 1.1;
+    cursor: pointer;
+    font-weight: 700;
+}
+.my-nav-link:hover{
+    background-image: linear-gradient(to right,#fff,rgb(255, 255, 255));
+    background-position: 0 1.85em;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    font-weight: 600;
+    /* transition: 1s; */
+}
+
+
+@media only screen and (max-width:688px){
+    .my-nav-link:hover{
+        width: 30%;
+    }
+}

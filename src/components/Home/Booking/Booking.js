@@ -16,7 +16,7 @@ const Booking = () => {
         })
     } , [id])
     const BookedService = services.find(service => service._id === id);
-    const { _id,name}= BookedService || '';
+    const { _id,name, img}= BookedService || '';
 
     const { register, handleSubmit,reset, formState: { errors } } = useForm();
     const {user} = useAuth();
@@ -26,6 +26,8 @@ const Booking = () => {
         // data.order=savedCart;
         data.status= 'pending';
         data.id = _id;
+        data.name = name;
+        data.img = img;
         console.log(data)
         fetch('http://localhost:5000/myBookings', {
             method: 'POST',
@@ -35,12 +37,15 @@ const Booking = () => {
             body: JSON.stringify(data)
         })
         .then(res => res.json())
-        .then(result=>{
-            if(result.insertedId){
-                alert('Order procced successfully');
+        .then(res=>{
+            console.log(res)
+            if(res.insertedId){
+                alert('Order placed successfully');
                 reset();
             }
         })
+        alert('Order placed successfully');
+                reset();
 
     };
     return ( 

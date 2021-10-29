@@ -1,0 +1,14 @@
+.MyBookingDetail{
+    background-color: #F3F2F2;
+}
+
+.booked-img{
+    height: 200px;
+    width: 400px;
+}
+.cencel-btn{
+    background-color: #FDD200;
+    font-size: 20px;
+    border-radius:  25px 25px 25px 25px;
+    padding: 6px 20px;
+}

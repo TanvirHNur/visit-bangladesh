@@ -32,6 +32,29 @@ const AllBooking = () => {
             }
         })
         }
+    };
+
+    const handleUpdate =id => {
+        
+        const url=`http://localhost:5000/myBookings/${id}`;
+        const updatedItem =bookings.find(booking => booking._id ==id);
+        console.log(updatedItem)
+        updatedItem.status='Approved'
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(bookings)
+        })
+        .then(res=> res.json())
+        .then(data => {
+            console.log(data);
+            if(data.modifiedCount >0){
+                alert('Updated successfully');
+                setBookings(bookings)
+            }
+        })
     }
     return (
         <div className="container">
@@ -50,6 +73,7 @@ const AllBooking = () => {
             <img className="booked-img" src={booking.img} alt="" />
             <div className="ms-3">
             <h3>{booking.item} </h3>
+            <button className="btn approve-btn" onClick={ () =>  handleUpdate(booking._id) }>Approve</button>
             <button className="btn cencel-btn" onClick={ () =>  handleDelete(booking._id) }>Cencel</button>
             <p>Ordered By</p>
             <h6>{booking.name} </h6>

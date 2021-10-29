@@ -1,10 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBcfLKMfLa3aVgzJxx8JIL4gVokUkqZedI",
-  authDomain: "health-care-bd-org.firebaseapp.com",
-  projectId: "health-care-bd-org",
-  storageBucket: "health-care-bd-org.appspot.com",
-  messagingSenderId: "564344195466",
-  appId: "1:564344195466:web:f4ac0482eac22871686073"
+  apiKey: "AIzaSyBFC4AwQuETxSo_3vOAnFS3X6SF6wPSK68",
+  authDomain: "visit-bangladesh-gov.firebaseapp.com",
+  projectId: "visit-bangladesh-gov",
+  storageBucket: "visit-bangladesh-gov.appspot.com",
+  messagingSenderId: "1063940426162",
+  appId: "1:1063940426162:web:2d6c11e75791c4ee4afcab"
 };
-
   export default firebaseConfig;

@@ -55,6 +55,7 @@ const MyBooking = () => {
             <img className="booked-img img-fluid" src={booking.img} alt="" />
             <div className="ms-3">
             <h3>{booking.item} </h3>
+            <h6>{booking.status} </h6>
             <button className="btn cencel-btn" onClick={ () =>  handleDelete(booking._id) }>Cencel</button>
             </div>
         </div>

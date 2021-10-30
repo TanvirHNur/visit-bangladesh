@@ -10,7 +10,7 @@ const Header = () => {
   const {user, logOut} = useAuth();
     return (
         <div>
-             <Navbar collapseOnSelect expand="lg" className="my-nav-bg">
+             <Navbar collapseOnSelect expand="lg" className="my-nav-bg" sticky="top">
   <Container>
   <Navbar.Brand href="/home">
       {/* <img
@@ -25,9 +25,14 @@ const Header = () => {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link className="my-nav-link" as={Link} to="/home">Home</Nav.Link>
-        <Nav.Link className="my-nav-link" as={HashLink} to="/">Donation</Nav.Link>
         <Nav.Link className="my-nav-link" as={Link} to="/events">Events</Nav.Link>
-        <Nav.Link className="my-nav-link" as={Link} to="/blog">Blog</Nav.Link>
+      {
+        user?.email && 
+        <Nav>
+          <Nav.Link className="my-nav-link" as={Link} to="/addService">Add Service</Nav.Link>
+        <Nav.Link className="my-nav-link" as={Link} to="/allBooking">All Booking</Nav.Link>
+        </Nav>
+      }
         
       </Nav>
     </Navbar.Collapse>
@@ -37,7 +42,6 @@ const Header = () => {
         <Link className="my-nav-link" to="/login">Login</Link> */}
       { user?.email ? 
         <div>
-          <Link className="my-nav-link me-2" to="/allBooking">All Booking</Link>
           <Link className="my-nav-link me-2" to="/myBooking">My Booking</Link>
         <Link className="my-nav-link me-2" to="/">{user?.displayName}</Link>
         <Link onClick={logOut} className="my-nav-link" to="/home">

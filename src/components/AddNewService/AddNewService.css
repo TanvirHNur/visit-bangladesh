@@ -6,7 +6,15 @@
 }
 
 .add-service form input, textarea{
-    width: 40%;
+    width: 20%;
     margin-bottom: 10px;
     margin-top: 5px;
+    border-radius: 3px;
+    border: 1px gray solid !important;
 }
+
+@media only screen and (max-width:688px) {
+    .add-service form input, textarea{
+        width: 40%
+    }
+};

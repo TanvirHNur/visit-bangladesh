@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Spinner } from 'react-bootstrap';
 
 const AllBooking = () => {
     const [bookings,setBookings] = useState([]);
     useEffect( () => {
-        fetch('http://localhost:5000/myBookings')
+        fetch('https://mysterious-hamlet-49510.herokuapp.com/myBookings')
         .then(res=> res.json())
         .then(data=> setBookings(data))
         .catch(err => {
@@ -17,7 +17,7 @@ const AllBooking = () => {
         const procced = window.confirm('Are you sure, you want to delete?')
         if(procced){
             
-        const url = `http://localhost:5000/myBookings/${id}`;
+        const url = `https://mysterious-hamlet-49510.herokuapp.com/myBookings/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
@@ -36,7 +36,7 @@ const AllBooking = () => {
 
     const handleUpdate =id => {
         
-        const url=`http://localhost:5000/myBookings/${id}`;
+        const url=`https://mysterious-hamlet-49510.herokuapp.com/myBookings/${id}`;
         const updatedItem =bookings.find(booking => booking._id ==id);
         console.log(updatedItem)
         updatedItem.status='Approved'
@@ -49,12 +49,14 @@ const AllBooking = () => {
         })
         .then(res=> res.json())
         .then(data => {
+            setBookings(bookings)
             console.log(data);
             if(data.modifiedCount >0){
                 alert('Updated successfully');
                 setBookings(bookings)
             }
         })
+        setBookings(bookings)
     }
     return (
         <div className="container">
@@ -63,7 +65,9 @@ const AllBooking = () => {
 
            {
                !bookings.length? <div>
-                   <h1>Nothing Found</h1>
+                   <div className="d-flex justify-content-center mt-5">
+            <Spinner className="m-5" animation="border" variant="danger" />
+        </div>
                </div> :
                 <Row xs={1} md={2} className="g-5 my-4">
                 {
@@ -73,7 +77,12 @@ const AllBooking = () => {
             <img className="booked-img" src={booking.img} alt="" />
             <div className="ms-3">
             <h3>{booking.item} </h3>
-            <button className="btn approve-btn" onClick={ () =>  handleUpdate(booking._id) }>Approve</button>
+            {
+                booking.status === "pending" ?
+                 <button className="btn approve-btn btn-info mb-2" onClick={ () =>  handleUpdate(booking._id) }>Approve</button>
+                 : 
+                 <h6>Approved</h6>
+            }
             <button className="btn cencel-btn" onClick={ () =>  handleDelete(booking._id) }>Cencel</button>
             <p>Ordered By</p>
             <h6>{booking.name} </h6>

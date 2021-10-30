@@ -12,7 +12,6 @@ const AllBooking = () => {
         })
     } , []);
     
-    // const {name, img, _id} = booking || '';
     const handleDelete =(id) =>{
         const procced = window.confirm('Are you sure, you want to delete?')
         if(procced){
@@ -45,18 +44,18 @@ const AllBooking = () => {
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(bookings)
+            body: JSON.stringify(updatedItem)
         })
         .then(res=> res.json())
         .then(data => {
-            setBookings(bookings)
-            console.log(data);
+            const all= [...bookings]
+                setBookings(all)
             if(data.modifiedCount >0){
                 alert('Updated successfully');
-                setBookings(bookings)
+                const all= [...bookings]
+                setBookings(all)
             }
         })
-        setBookings(bookings)
     }
     return (
         <div className="container">

@@ -1,4 +1,8 @@
 
+.service{
+    height: 415px;
+}
+
 .service-img{
     height: 160px !important;
     overflow: hidden !important;
@@ -16,7 +20,7 @@
 }
 .service-col{
     background-color: #F6F6F6;
-    height: 415px;
+    
 }
 .service-col{
     box-shadow: 3px 10px 10px 3px gray;

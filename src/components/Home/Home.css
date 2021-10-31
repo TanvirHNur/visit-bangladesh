@@ -12,6 +12,14 @@
 .home-text h1{
     color: #E1D8AA !important;
 }
+.necessary-link{
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.necessary-link .fas:hover{
+    color: #FEE04E;
+}
 @media only screen and (max-width:688px) {
     .home-text{
         padding-top: 200px;

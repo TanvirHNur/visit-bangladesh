@@ -1,5 +1,7 @@
 import React from 'react';
+import Experiences from './Experiences/Experiences';
 import './Home.css'
+import NecessaryInfo from './NecessaryInfo/NecessaryInfo';
 import Services from './Services/Services';
 
 const Home = () => {
@@ -11,7 +13,9 @@ const Home = () => {
                 <h4 className="text-center text-light">The prime sustainable destination in the Mediterranean, located in the Asia </h4>
                 </div>
             </div>
+            <Experiences/>
             <Services/>
+            <NecessaryInfo></NecessaryInfo>
         </div>
     );
 };

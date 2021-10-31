@@ -18,7 +18,7 @@ const Services = () => {
     console.log(services)
     return (
         <div className="container pt-5">
-            <h1 className="text-center heading-text fs-1">Amazing places to visit</h1>
+            <h1 className="text-center fw-bold heading-text fs-1">Amazing places to visit</h1>
             <h5>Bangladesh has incredible places for you all around the country. Our fantastic destinations are ready for your visit.</h5>
 
             {

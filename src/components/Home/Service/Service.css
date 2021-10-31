@@ -1,6 +1,6 @@
 
 .service-img{
-    height: 170px !important;
+    height: 160px !important;
     overflow: hidden !important;
     border-radius: 3px gray solid;
     
@@ -18,7 +18,13 @@
     background-color: #F6F6F6;
     height: 415px;
 }
+.service-col{
+    box-shadow: 3px 10px 10px 3px gray;
+}
 
+.service-text{
+    height: 130px;
+}
 
 
 .booking-btn{

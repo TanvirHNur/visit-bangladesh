@@ -12,10 +12,10 @@ const Service = ({service}) => {
                      <Card.Img className="service-img" variant="top" src={img} />
                     <Card.Body>
                      <Card.Title>{name}</Card.Title>
-                     <Card.Text>
+                     <Card.Text className="service-text">
                          {des}
                      </Card.Text>
-                     <Link className="booking-btn fs-5" to={`booking/${_id}`}>Book</Link>
+                     <Link className="booking-btn fs-5" to={`booking/${_id}`}>Book Online</Link>
                  </Card.Body>
                 </Card>
             </Col>

@@ -14,7 +14,11 @@
 }
 
 @media only screen and (max-width:688px) {
+    .booking{
+        margin-right: 0px !important;
+        overflow-x: hidden !important;
+    }
     .booked-img{
-        width: 60%;
+        width: 300px
     }
 };

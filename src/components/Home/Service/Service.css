@@ -2,6 +2,7 @@
 .service-img{
     height: 170px !important;
     overflow: hidden !important;
+    border-radius: 3px gray solid;
     
 };
 .service:hover .service-img{
@@ -11,6 +12,7 @@
 }
 .service{
     border: none !important;
+    border-radius: 3px gray solid;
 }
 .service-col{
     background-color: #F6F6F6;

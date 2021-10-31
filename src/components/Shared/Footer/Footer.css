@@ -1,0 +1,29 @@
+.footer{
+    background-color: #494546;
+    color: white;
+}
+.footer-link{
+    text-decoration: none;
+    color: white;
+}
+.footer-link:hover{
+    color: #b0c3c2;
+    text-decoration: underline;
+    
+}
+.about{
+    font-size:16px;
+    margin-bottom: 5px;
+}
+.about i{
+    margin-right: 10px;
+}
+
+
+.social{
+    font-size: 20px;
+}
+.social i:hover{
+    color: rgba(207, 28, 28, 0.911);
+    text-decoration: none;
+}

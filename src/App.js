@@ -10,7 +10,8 @@ import PrivateRoute from './components/login/PrivateRoute/PrivateRoute';
 import MyBooking from './components/MyBooking/MyBooking';
 import NotFound from './components/NotFound/NotFound';
 import Register from './components/Register/Register';
-import Header from './components/Shared/Header/Header'
+import Header from './components/Shared/Header/Header';
+import Footer from './components/Shared/Footer/Footer';
 import AuthProvider from './contexts/AuthProvider';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
               <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer/>
         </Router>
       </AuthProvider>
     </div>

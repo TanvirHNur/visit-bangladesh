@@ -49,7 +49,7 @@ const MyBooking = () => {
                    <h1 className="text-center text-warning pt-4">Nothing Found</h1>
                    <h4 className="text-center text-info"> <span className="fs-5"><Link to="/home">Book Now</Link></span></h4>
                </div> :
-                <Row xs={1} md={2} className="g-5 my-4">
+                <Row xs={1} md={2} className="g-5 my-4 booking">
                 {
                     myBookings.map(booking => {
                         return (

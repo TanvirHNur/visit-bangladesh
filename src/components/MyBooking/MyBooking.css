@@ -1,0 +1,7 @@
+
+
+@media only screen and (max-width:688px) {
+    .add-service form input, textarea{
+        width: 40%
+    }
+};

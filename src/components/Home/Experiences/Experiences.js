@@ -12,7 +12,7 @@ const Experiences = () => {
             </div>
             <Row className="m-3 g-4 mt-5">
                 <div className="col-md-6 experience d-flex">
-                <h2 className="text-light mb-4">Nature and Outdoor Activities</h2>
+                <h3 className="text-light mb-4">Nature and Outdoor Activities</h3>
                 <Link to="/" className="cencel-btn btn mb-3 ms-3">Read more</Link>
                 </div>
                 <div className="col-md-6 experience1 d-flex ms-">

@@ -25,7 +25,6 @@ const Header = () => {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link className="my-nav-link" as={Link} to="/home">Home</Nav.Link>
-        <Nav.Link className="my-nav-link" as={Link} to="/events">Events</Nav.Link>
       {
         user?.email && 
         <Nav>

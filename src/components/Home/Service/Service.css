@@ -1,6 +1,6 @@
 
 .service{
-    height: 415px;
+    height: 66vh;
 }
 
 .service-img{
@@ -27,7 +27,7 @@
 }
 
 .service-text{
-    height: 130px;
+    height: 150px;
 }
 
 
@@ -44,6 +44,12 @@
 @media only screen and (max-width:688px){
     .service-col{
         background-color: #F6F6F6;
+        height: auto;
+    }
+    .service{
+        height: auto;
+    }
+    .service-text{
         height: auto;
     }
 }

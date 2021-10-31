@@ -68,7 +68,7 @@ const AllBooking = () => {
             <Spinner className="m-5" animation="border" variant="danger" />
         </div>
                </div> :
-                <Row xs={1} md={2} className="g-5 my-4">
+                <Row xs={1} md={2} className="gy-5 my-4">
                 {
                     bookings.map(booking => {
                         return (

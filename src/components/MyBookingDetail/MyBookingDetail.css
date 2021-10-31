@@ -12,6 +12,10 @@
     border-radius:  25px 25px 25px 25px;
     padding: 6px 20px;
 }
+.cencel-btn:hover{
+    background-color: #fff;
+    color: #FDD40A;
+}
 
 @media only screen and (max-width:688px) {
     .booking{

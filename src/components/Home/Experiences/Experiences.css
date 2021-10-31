@@ -1,0 +1,28 @@
+.experience{
+    background-image: linear-gradient(rgb(1,3,10,0.1),rgb(1,9,3,0.4)),url('../../../images/experience/ex-1.webp');
+    height: 50vh;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.experience1{
+    background-image: linear-gradient(rgb(1,3,10,0.1),rgb(1,9,3,0.4)),url('../../../images/experience/GettyImages-1192330919-2-scaled.webp');
+    height: 50vh;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.experience2{
+    background-image: linear-gradient(rgb(1,3,10,0.1),rgb(1,9,3,0.4)),url('../../../images/experience/PR_Ilha_do_Mel0110-2-scaled.webp');
+    height: 50vh;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.experience3{
+    background-image: linear-gradient(rgb(1,3,10,0.1),rgb(1,9,3,0.4)),url('../../../images/experience/SU_FozIguacu2216-2-scaled.webp');
+    height: 50vh;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
